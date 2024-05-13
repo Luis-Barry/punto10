@@ -28,4 +28,13 @@ void draw(){
   BC = new Vector(B, C);
   BC.display();
   
+  strokeWeight(5);
+  PVector D = AB.sumar(BC).destino;
+  point(D.x, D.y);
+  
+  strokeWeight(1);
+  BD = new Vector(B, D);
+  BD.display();
+  CD = new Vector(C, D);
+  CD.display();
 }
